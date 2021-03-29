@@ -1,3 +1,4 @@
+/* CUSTOM PROPERTIES */
 :root {
   /* Colors */
   --text-color: #191919;
@@ -5,4 +6,32 @@
 
   /* Font related */
   --font-family: "Open Sans", "Arial", sans-serif;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-v18-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v18-latin-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v18-latin-700.woff") format("woff");
+}
+
+
+/* GLOBAL STYLES */
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: var(--text-color);
 }
