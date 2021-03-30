@@ -191,3 +191,81 @@ body {
 .dropdown-menu a:active {
   opacity: 0.6;
 }
+
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+.site-footer__container {
+  display: flex;
+}
+
+.site-footer__info {
+  width: 320px;
+  margin-right: 100px;
+}
+
+.site-footer__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.site-footer__nav {
+  width: 150px;
+  margin-right: 80px;
+}
+
+.site-footer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-footer-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.site-footer-list__link {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer-list__link:hover {
+  color: var(--accent-color);
+}
+
+.site-footer-list__link:active {
+  opacity: 0.6;
+}
+
+.site-footer-list__link--icon::before {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.site-footer-list__link--telegram::before {
+  background-image: url("../img/icon-telegram.png");
+}
+
+.site-footer-list__link--facebook::before {
+  background-image: url("../img/icon-facebook.png");
+}
+
+.site-footer-list__link--instagram::before {
+  background-image: url("../img/icon-instagram.png");
+}
