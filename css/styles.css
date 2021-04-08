@@ -46,6 +46,20 @@ body {
   color: var(--text-color);
 }
 
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
 
 /* CONTAINER */
 .container {
