@@ -106,7 +106,7 @@
         </ul>
 
         <footer class="site-section__actions">
-          <a class="button button--primary" href="#order-form">Buyurtma berish</a>
+          <a class="button button--primary" href="#order">Buyurtma berish</a>
           <a href="services.html">Xizmatlar sahifasiga o'tish</a>
         </footer>
       </div>
@@ -156,8 +156,43 @@
         </ol>
 
         <footer class="site-section__actions">
-          <a class="button button--primary" href="#order-form">Buyurtma berish</a>
+          <a class="button button--primary" href="#order">Buyurtma berish</a>
         </footer>
+      </div>
+    </section>
+
+
+    <!-- ORDER -->
+    <section class="order site-section site-section--accent" id="order">
+      <div class="container">
+        <h2 class="site-section__heading">Buyurtma berish</h2>
+        <p class="site-section__info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam veritatis praesentium a.</p>
+
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="order-form__group">
+            <label class="visually-hidden" for="name-input">Ism</label>
+            <input class="order-form__field" id="name-input" type="text" name="name" placeholder="Ismingiz" required>
+          </div>
+
+          <div class="order-form__group">
+            <label class="visually-hidden" for="phone-input">Telefon raqami</label>
+            <input class="order-form__field" id="phone-input" type="tel" name="phone_number" placeholder="Telefon raqami" required>
+          </div>
+
+          <div class="order-form__group">
+            <label class="visually-hidden" for="service-select">Xizmat turi</label>
+            <select class="order-form__field" id="service-select" name="service" required>
+              <option value="" selected disabled>Xizmat turi</option>
+              <option value="website">Sayt tuzish</option>
+              <option value="telegram_bot">Telegram bot</option>
+              <option value="smm">SMM</option>
+              <option value="graphic_design">Grafik dizayn</option>
+              <option value="crm">CRM tizimlar</option>
+            </select>
+          </div>
+
+          <button class="button button--primary" type="submit">Buyurtma berish</button>
+        </form>
       </div>
     </section>
 
