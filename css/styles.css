@@ -293,6 +293,16 @@ a {
   text-align: center;
 }
 
+.site-section__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-section__actions a:not(:last-child) {
+  margin-right: 16px;
+}
+
 
 /* INDEX-SERVICES */
 .index-services__list {
@@ -375,14 +385,75 @@ a {
   margin: 0;
 }
 
-.index-services__actions {
+
+/* HOW WE WORK */
+.how-we-work__list {
+  max-width: 830px;
+  padding: 0;
+  margin: 8px auto 40px;
+  list-style: none;
+}
+
+.how-we-work__item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.index-services__actions a:not(:last-child) {
-  margin-right: 16px;
+.how-we-work__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.how-we-work__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.how-we-work__item::before {
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.how-we-work__item--requirements::before {
+  height: 278px;
+  background-image: url("../img/step-illlustration-requirements.png");
+}
+
+.how-we-work__item--offers::before {
+  height: 224px;
+  background-image: url("../img/step-illlustration-offers.png");
+}
+
+.how-we-work__item--deadline::before {
+  height: 258px;
+  background-image: url("../img/step-illustration-deadline.png");
+}
+
+.how-we-work__item--quality::before {
+  height: 171px;
+  background-image: url("../img/step-illustration-quality.png");
+}
+
+.how-we-work__item--support::before {
+  height: 232px;
+  background-image: url("../img/step-illustration-support.png");
+}
+
+.how-we-work__details {
+  width: 500px;
+}
+
+.how-we-work__step-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.how-we-work__step-info {
+  margin: 0;
 }
 
 
